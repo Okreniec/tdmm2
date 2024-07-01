@@ -1,0 +1,131 @@
+:root {
+    --color_primario: #FF0000;
+    --color_acento: #9D00CD;
+    --padding_left_right: 2rem;
+}
+
+body {
+    font-family: sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0 10%;
+    margin: 0px;
+    background-color: #242222;
+    color: #FFFFFF;
+}
+
+nav {
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161617;
+    margin: 0px;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.buscador{
+    height: 40px;
+    padding: 0 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-style:none;
+    border-bottom-style:inset;
+}
+.buscador::placeholder{
+    background-image: url(./imgs/Iconos/lupa.png);
+    background-repeat: no-repeat;
+    background-position: 5% center;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.profile {
+    padding-right: 10%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Banner */
+
+/* Banner */
+.banner {
+    background-image: url(Assassins_Creed_Mirage.png);
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 120px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: white;
+}
+
+.banner .subtitulo {
+    font-size: 20px;
+    color: white;
+}
+
+.banner .like, .comentario {
+    color: var(--color_acento);
+}
+
+.banner .barra {
+    width: 100%;
+    height: auto;
+}
+
+button {  
+    background-color: transparent;
+    height: 24px;
+    width: 20px;  
+}
+
+.Interacciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 76px;
+}
+
+.like, .comentario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.icono-banner {
+    width: 20px;
+}
+
+.segunda {
+    display: flex;
+    flex-direction: row;
+}
