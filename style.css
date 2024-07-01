@@ -36,7 +36,14 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    text-decoration: none;
 }
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .buscador{
     height: 40px;
     padding: 0 24px;
@@ -44,6 +51,7 @@ nav {
     text-align: center;
     border-style:none;
     border-bottom-style:inset;
+    color:#FFFFFF;
 }
 .buscador::placeholder{
     background-image: url(./imgs/Iconos/lupa.png);
@@ -61,10 +69,6 @@ nav {
     padding-right: 10%;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
 /* Banner */
 
