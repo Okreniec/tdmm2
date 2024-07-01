@@ -36,14 +36,7 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    text-decoration: none;
 }
-
-a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
 .buscador{
     height: 40px;
     padding: 0 24px;
@@ -51,7 +44,6 @@ a{
     text-align: center;
     border-style:none;
     border-bottom-style:inset;
-    color:#FFFFFF;
 }
 .buscador::placeholder{
     background-image: url(./imgs/Iconos/lupa.png);
@@ -69,6 +61,10 @@ a{
     padding-right: 10%;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 /* Banner */
 
@@ -111,18 +107,11 @@ button {
     width: 20px;  
 }
 
-.Interacciones {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 76px;
-}
-
 .like, .comentario {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 }
 
 .icono-banner {
@@ -130,6 +119,21 @@ button {
 }
 
 /* S E G U N D O   C O N T E N E D O R*/
+
+.JuegosSemana {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Fondo-violeta {
+    align-self: flex-start;
+}
+
+.Fondo-violeta img {
+    width: 100%;
+    height: auto;
+}
 
 .segunda{
     display: flex;
@@ -148,6 +152,128 @@ button {
     margin-top: 60px;
 }
 
+.juego-hilos{
+    color: #A7A6A6;
+}
+
+.icono-reloj-hilo{
+    width: 14px;
+}
+
+/*----P E R F I L E S   R E S E Ñ A S----*/
+
+.BulletReview {
+    width: 100%;
+    background-color: #242222;
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil{
+    margin-top: 50%;
+}
+
+.fondo-img{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.BulletReview .Text {
+    flex: 1;
+    padding-bottom: 10px;
+}
+
+.BulletReview .comentario-like {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 1;
+    gap: 76px;
+}
+
+.icono-review{
+    width: 14px;
+    height: 14px;
+    padding-right: 5px;
+}
+
+.subtitle{
+    font-size: 14px;
+    color: #E3E3E3;
+}
+
+.subtitulo-0{
+    font-size: 11px;
+}
+
+.subtitulo-1 {
+    font-size: 11px;
+    color: #A7A6A6;
+}
+
+.subtitulo-2 {
+    font-size: 11px;
+    color: var(--color_primario);
+}
+
+.icono-review-2{
+    width: 14px;
+    height: 14px;
+    margin-top: 8px;
+    margin-right: 11px;
+}
+
+.caja-comentarios {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #242222;
+    width: 100%;
+}
+
+.imagen-comentario {
+    flex: 0 0 auto;
+    margin-right: 15px;
+}
+
+.imagen-comentario img {
+    max-width: 100%;
+    height: auto;
+    padding-right: 25px;
+}
+
+.escribir-comentario {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    width: 75%;
+    margin-right: 11px;
+    background-color: #161617;
+}
+
+.texto-comentario, .texto-comentario-2{
+    margin-left: 35px;
+}
+
+.texto-comentario-2{
+    font-size: 14px;
+    color: #E3E3E3;
+}
+
+.boton-linea-roja, .boton-linea-roja-2{
+    border: 2;
+    padding: 6px 42px;
+    border-color: #FF0000;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.boton-linea-roja-2{
+    margin-bottom: 11px;
+    margin-left: 72%;
+}
+
+/*-----F I N   P E R F I L E S   R E S E Ñ A S-----*/
+  
 .Noticias {
     background-color: #141414;
     display: flex;
@@ -157,8 +283,6 @@ button {
     margin-top: 60px;
 }
 
-
-
 .Perfiles{
     background-color: #141414;
     display: flex;
@@ -166,32 +290,17 @@ button {
     margin-top: 60px;
 }
 
-/* F O O T E R*/
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin-top: 20px;
-    background-color: #141414;
-}
-
-.redesSociales{
-    margin: 24px 0;
+.Juego {
     display: flex;
-    flex-direction: row;
-    gap: 5%;
-    justify-content: center;
-}
-
-.footerLinks{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    font-size: 14px;
-}
-
-.links{
-    text-decoration: underline;
-}
+  }
+  
+  .text {
+    flex: 1;
+  }
+  
+  .imagen {
+    margin-left: 20px;
+  }
+  
