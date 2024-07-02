@@ -125,6 +125,7 @@ button {
 /* S E G U N D O   C O N T E N E D O R*/
 
 .JuegosSemana {
+    margin-top: 38px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -281,10 +282,10 @@ button {
 
 /*----- I N I C I O   N O T I C I A S / A R T I C U L O S------*/
 .contenedor-derecha {
-    width: 35%;
+    margin-top: 38px;
+    width: 31%;
     box-sizing: border-box;
     background-color: #141414;
-    padding: 20px;
 }
 
 .Noticias {
@@ -367,7 +368,7 @@ button {
     text-align: center;
 }
 
-/* L I S T A DE C O M U N I D A D*/
+/* L I S T A   D E   C O M U N I D A D*/
 
 .sectionComunidad {
     position: relative;
@@ -379,7 +380,6 @@ button {
 .listaComunidad {
     position: absolute;
     top: 0;
-    /* Asegúrate de alinear al top del contenedor padre */
     left: 0;
     margin-top: 60px;
     display: grid;
