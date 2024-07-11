@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const items = document.querySelectorAll(".item");
+    const portadaJuegos = document.querySelectorAll(".game");
     const profileImages = document.querySelectorAll(".profileImage");
 
     items.forEach((item, index) => {
@@ -11,4 +12,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const profileNumber = index + 1;
         profileImage.style.backgroundImage = `url(./imgs/Profile//profile-${profileNumber}.png)`;
     });
+
+    portadaJuegos.forEach((game, index) => {
+        const profileNumber = index + 1;
+        game.style.backgroundImage = `url(./imgs/portadaJuego//portada-${profileNumber}.png)`;
+    });
+
 });

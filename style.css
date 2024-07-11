@@ -368,6 +368,47 @@ hr {
     text-align: center;
 }
 
+/* F I N   D E  P E R F I L E S   C R I T I C O S */
+
+/*J U E G O S  D E  L A  S E M A N A */
+
+.JuegosCarrrusel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#nomenJuego {
+    background-color: #9D00CD;
+    position: absolute;
+    width: auto;
+}
+
+.nomenclador h2 {
+    white-space: nowrap;
+    font-size: 20px;
+    padding: 8px 24px;
+    margin: 0;
+}
+
+.horizontalCarrusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+}
+
+.game {
+    width: calc((100% / 6) - 12px);
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 45%;
+}
+
+/*F I N  D E  J U E G O S  D E  L A  S E M A N A */
+
 /* L I S T A   D E   C O M U N I D A D*/
 
 .sectionComunidad {
