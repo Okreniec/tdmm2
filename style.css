@@ -128,6 +128,7 @@ button {
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
+    display: flex;
 }
 
 .JuegosSemana {
@@ -138,7 +139,7 @@ button {
     display: flex;
     flex-direction: column;
     background-color: #141414;
-    width: 60%; 
+    width: 100%; 
     padding: 20px;
 }
 
@@ -314,8 +315,8 @@ hr {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    background-color: #141414; /* Asegúrate de que el color de fondo coincida con el de la página */
+    width: 100%;
+    background-color: #141414;
     padding: 16px;
     padding-bottom: 40px;
     gap: 16px;
@@ -367,9 +368,6 @@ hr {
     padding: 6px 0;
     text-align: center;
 }
-
-/* F I N   D E  P E R F I L E S   C R I T I C O S */
-
 /*J U E G O S  D E  L A  S E M A N A */
 
 .JuegosCarrrusel {
