@@ -124,11 +124,22 @@ button {
 
 /* S E G U N D O   C O N T E N E D O R*/
 
+.segunda {
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
 .JuegosSemana {
+    background-image: url(Content-Warning.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     margin-top: 38px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    background-color: #141414;
+    width: 60%; 
+    padding: 20px;
 }
 
 .Fondo-violeta {
@@ -139,20 +150,6 @@ button {
     width: 100%;
     height: auto;
 }
-
-.segunda {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.JuegosSemana {
-    background-color: #141414;
-    width: 60%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
 
 .juego-hilos {
     color: #A7A6A6;
@@ -165,32 +162,18 @@ button {
 /*----P E R F I L E S   R E S E Ñ A S----*/
 
 .BulletReview {
+    background-image: url(Flechas.png);
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 100%;
     background-color: #242222;
-    display: flex;
-    justify-content: space-between;
 }
 
-.perfil {
-    margin-top: 50%;
-}
-
-.fondo-img {
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-.BulletReview .Text {
-    flex: 1;
-    padding-bottom: 10px;
-}
-
-.BulletReview .comentario-like {
-    margin-top: 10px;
-    display: flex;
-    gap: 5px;
-    z-index: 1;
-    gap: 76px;
+hr {
+    border: 1px solid rgba(27, 26, 26, 10);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .icono-review {
@@ -199,67 +182,11 @@ button {
     padding-right: 5px;
 }
 
-.subtitle {
-    font-size: 14px;
-    color: #E3E3E3;
-}
-
-.subtitulo-0 {
-    font-size: 11px;
-}
-
-.subtitulo-1 {
-    font-size: 11px;
-    color: #A7A6A6;
-}
-
-.subtitulo-2 {
-    font-size: 11px;
-    color: var(--color_primario);
-}
-
 .icono-review-2 {
     width: 14px;
     height: 14px;
     margin-top: 8px;
     margin-right: 11px;
-}
-
-.caja-comentarios {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    background-color: #242222;
-    width: 100%;
-}
-
-.imagen-comentario {
-    flex: 0 0 auto;
-    margin-right: 15px;
-}
-
-.imagen-comentario img {
-    max-width: 100%;
-    height: auto;
-    padding-right: 25px;
-}
-
-.escribir-comentario {
-    margin-top: 11px;
-    margin-bottom: 11px;
-    width: 75%;
-    margin-right: 11px;
-    background-color: #161617;
-}
-
-.texto-comentario,
-.texto-comentario-2 {
-    margin-left: 35px;
-}
-
-.texto-comentario-2 {
-    font-size: 14px;
-    color: #E3E3E3;
 }
 
 .boton-linea-roja,
@@ -276,6 +203,78 @@ button {
     margin-bottom: 11px;
     margin-left: 72%;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-2 {
+    display: flex;
+    align-items: center;
+}
+
+.container-2 p{
+    margin-bottom: 10px;
+}
+
+.color-rojo-txt{
+    color: #FF0000;
+}
+
+.BulletReview p{
+    margin-left: 5px;
+}
+
+.BulletReview h2, .BulletReview .texto-content-warning{
+    margin-left: 30px;
+}
+
+.dur-inm-jug-pun-com-lik {
+    display: flex;
+    align-items: center;
+}
+
+.dur-inm-jug-pun-com-lik a,
+.dur-inm-jug-pun-com-lik button {
+    margin-right: 5px;
+}
+
+.dur-inm-jug-pun-com-lik button {
+    border: 0;
+    width: 125px;
+    padding: 5px 22px;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(157, 0, 205, 25%);
+}
+
+.dur-inm-jug-pun-com-lik-2 {
+    border: 0;
+    margin-left: 5px;
+    width: 135px;
+    color: white;
+    background-color: rgba(157, 0, 205, 100%);
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+}
+
+.stats p {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.stats img {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+}
+
 
 /*-----F I N   P E R F I L E S   R E S E Ñ A S-----*/
 
@@ -312,10 +311,11 @@ button {
 /* ----- P E R F I L E S D E C R I T I C O S -------*/
 
 .criticos {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     width: 60%;
-    background-color: #141414;
+    background-color: #141414; /* Asegúrate de que el color de fondo coincida con el de la página */
     padding: 16px;
     padding-bottom: 40px;
     gap: 16px;
