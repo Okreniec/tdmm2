@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const items = document.querySelectorAll(".item");
     const portadaJuegos = document.querySelectorAll(".game");
