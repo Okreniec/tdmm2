@@ -297,6 +297,11 @@ hr {
     margin-top: 10px;
 }
 
+.imageNoticia {
+    height: 150px;
+    width: 100%;
+    background-image: url(./imgs/Juegos/articulo00.png);
+}
 .subtitulo-2b {
     font-size: 11px;
     color: var(--color_acento);

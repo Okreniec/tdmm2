@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const items = document.querySelectorAll(".item");
     const portadaJuegos = document.querySelectorAll(".game");
     const profileImages = document.querySelectorAll(".profileImage");
+    const imagesNoticias = document.querySelectorAll(".imageNoticia");
 
     items.forEach((item, index) => {
         const itemNumber = index + 1;
@@ -14,8 +15,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     portadaJuegos.forEach((game, index) => {
+        const portadaNumber = index + 1;
+        game.style.backgroundImage = `url(./imgs/portadaJuego//portada-${portadaNumber}.png)`;
+    });
+
+    imagesNoticias.forEach((imageNoticia, index) => {
         const profileNumber = index + 1;
-        game.style.backgroundImage = `url(./imgs/portadaJuego//portada-${profileNumber}.png)`;
+        imageNoticia.style.backgroundImage = `url(./imgs/Juegos//articulo-${profileNumber}.png)`;
     });
 
 });
