@@ -123,6 +123,73 @@ button {
     width: 20px;
 }
 
+/* I N I C I O   P O P U P*/
+
+.popup-contenedor {
+    background-color: #141414;
+}
+
+.popup{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.popup-izq{
+    margin: 22px;
+    background-color: #242222;
+    width: 60%;
+}
+
+.popup-izq h2{
+    color: rgba(255, 255, 255, 80);
+    margin-left: 10px;
+}
+
+.popup-izq p{
+    color: rgba(227, 227, 227, 80);
+    margin-left: 10px;
+}
+
+.popup-der{
+    color: #FFFFFF;
+    width: 40%;
+}
+
+.popup-abajo {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-cerrar-modal-1 {
+    border-radius: 2px;
+    padding: 6px 42px;
+    border-color: #FF0000;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-cerrar-modal{
+    background-color: #242222;
+    color: #FFFFFF;
+    padding: 6px 42px;
+    border: 0;
+    margin-right: 10px;
+}
+
+#modal {
+    border: 1px solid #9D00CD;
+    width: 60%;
+    overflow: hidden;
+}
+
+#modal::backdrop {
+    background-color: rgb(0, 0, 0, 0.55);
+}
+
+/* F I N   P O P U P*/
+
 /* S E G U N D O   C O N T E N E D O R*/
 
 .segunda {
@@ -148,7 +215,7 @@ button {
     align-self: flex-start;
 }
 
-.Fondo-violeta img {
+.Fondo-violeta .text img {
     width: 100%;
     height: auto;
 }
@@ -178,10 +245,16 @@ hr {
     margin-right: 5px;
 }
 
+.icono-review-0 {
+    width: 14px;
+    height: 14px;
+    margin-left: 470px;
+}
+
 .icono-review {
     width: 14px;
     height: 14px;
-    padding-right: 5px;
+    margin: 0;
 }
 
 .icono-review-2 {
@@ -191,7 +264,6 @@ hr {
     margin-right: 11px;
 }
 
-.boton-linea-roja,
 .boton-linea-roja-2,
 .boton-linea-roja-3 {
     border-radius: 2px;
@@ -199,6 +271,19 @@ hr {
     border-color: #FF0000;
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-abrir-modal {
+    border-radius: 2px;
+    padding: 6px 42px;
+    border-color: #FF0000;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 230px;
+}
+
+.text {
+    justify-content: space-between;
 }
 
 .boton-linea-roja-2 {
@@ -308,7 +393,7 @@ hr {
 }
 
 .imageNoticia {
-    height: 114px;
+    height: 108px;
     background-image: url(./imgs/Juegos/articulo00.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -566,9 +651,17 @@ hr {
     gap: 10%;
 }
 
+#botonLista {
+    height: 40px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1000;
+    margin-top: 16px;
+}
+
 .item-1 {
     grid-column: 1;
-    grid-row: 1/7;
+    grid-row: 2/8;
 }
 
 .item-2 {
@@ -588,7 +681,7 @@ hr {
 
 .item-5 {
     grid-column: 1;
-    grid-row: 7/13;
+    grid-row: 8/13;
 }
 
 .item-6 {

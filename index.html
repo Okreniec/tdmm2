@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,18 +55,38 @@
         </div>
     </div>
 
+    <dialog class="popup-contenedor" id="modal">
+        <div class="popup">
+            <div class="popup-izq">
+                <h2>El título de tu review</h2>
+                <hr>
+                <p>¿Qué opinás?</p><br><br><br><br>
+                <p><img src="imgs/Iconos/img-linea-blanca.png" alt="">Agregar imágenes (5)</p>
+            </div>
+            <div class="popup-der">
+                <h2>Tu puntaje</h2>
+                <p>Coloca el cursor y haz click para dar tu puntaje</p>
+                <img src="imgs/logos/numeros-reviews.png" alt="">
+            </div>
+        </div>
+        <div class="popup-abajo">
+            <input class="btn-cerrar-modal" id="btn-cerrar-modal" type="button" value="cancelar" />
+            <input class="btn-cerrar-modal-1" id="btn-cerrar-modal-1" type="button" value="publicar" />
+        </div>
+    </dialog>
+
     <div>
         <section class="segunda">
             <div class="contenedor-izquierda">
                 <div class="JuegosSemana">
-
-                    <div class="Fondo-violeta"><img src="imgs/logos/content-warning.png" alt=""></div>
                     <div class="Juego">
-                        <img class="icono-review" src="imgs/Iconos/Rojo/Guardado-linea.png" alt="">
+                        <div class="Fondo-violeta"><img src="imgs/logos/content-warning.png" alt="">
+                            <img class="icono-review-0" src="imgs/Iconos/Rojo/Guardado-linea.png" alt="">
+                        </div>
                         <div class="text">
                             <h2>Content Warning</h2>
                             <img src="imgs/logos/numeros.png" alt="">
-                            <input class="boton-linea-roja" type="button" value="¿Lo jugaste?" />
+                            <input class="btn-abrir-modal" id="btn-abrir-modal" type="button" value="¿Lo jugaste?" />
                         </div>
                     </div>
                     <br>
@@ -161,7 +180,7 @@
             <div class="contenedor-derecha">
                 <div class="Noticias">
                     <div class="imageNoticia noticia-0">
-                        
+
                     </div>
                     <div>
                         <h2>Los recomendados de la semana</h2>
@@ -254,6 +273,7 @@
         </div>
 
         <div class="listaComunidad">
+            <input class="boton-linea-roja-3" id="botonLista" type="button" value="Crear tu lista">
             <div class="item item-1">
                 <div class="itemContent">
                     <h2>Jugar en familia: Experiencias para compartir con tus hijes</h2>
@@ -501,7 +521,7 @@
             <img src="./imgs/logos/levelUp.png" alt="logoLevelUp" style="max-width: 10%; height: 100%;">
             <h4>
                 www.levelup.com y el logotipo de LEVELUP son marcas registradas.
-                 Derechos Reservados © LEVELUP.COM S de R.L. de C.V.
+                Derechos Reservados © LEVELUP.COM S de R.L. de C.V.
             </h4>
             <div class="links">
                 <a href="">Anunciate</a>

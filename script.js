@@ -25,4 +25,23 @@ document.addEventListener("DOMContentLoaded", function() {
         imageNoticia.style.backgroundImage = `url(./imgs/Juegos//articulo-${profileNumber}.png)`;
     });
 
+    const btnAbrirModal = 
+    document.querySelector("#btn-abrir-modal");
+    const btnCerrarModal = 
+    document.querySelector("#btn-cerrar-modal");
+    const btnCerrarModal1 = 
+    document.querySelector("#btn-cerrar-modal-1");
+    document.querySelector("#modal");
+
+    btnAbrirModal.addEventListener("click",()=>{
+        modal.showModal();
+    })
+
+    btnCerrarModal.addEventListener("click",()=>{
+        modal.close();
+    })
+
+    btnCerrarModal1.addEventListener("click",()=>{
+        modal.close();
+    })
 });
